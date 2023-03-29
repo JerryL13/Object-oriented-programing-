@@ -16,3 +16,7 @@ class person:
     return self.__str__()
 ```
 
+## Definitions
+-Encapsulation
+-Polymorphism
+-Override
