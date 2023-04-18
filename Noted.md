@@ -20,3 +20,11 @@ class person:
 - Encapsulation
 - Polymorphism
 - Override
+
+
+U3L4
+
+ITERABLE OJECTS 
+
+iterable objects: objectsthat we can iterate through like a sequence 
+
