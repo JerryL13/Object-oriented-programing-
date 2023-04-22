@@ -39,7 +39,7 @@ class person:
 -  objects code = methods 
 
 ### IN python 3
--Methods: we just declare them lke in a new function( doesnt always need to return)
+-  Methods: we just declare them lke in a new function( doesnt always need to return)
 -  initaitalization method is excuted as soon as an object of the class is instantiated 
 -  It helps us to do any initialization for the object’s attributes
 self parameter is used to denote that the method is applied and accessible for the object itself
