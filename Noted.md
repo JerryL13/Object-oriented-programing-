@@ -74,12 +74,63 @@ methods → L.append(), L.count(), L.extend(), L.sort(), L.reverse()
 - hiding information, restricting the access to a class or objects methods or attributes
   - we do this because of data protection and restricting certain methods to be callable (in python this isn't possible, we hide attributes and methods by using a double underscore __ as a prefix.)
 
-#### Overrides
-- 
+#### Overrides and overloading 
+-  Overloading: two methods in one class that have the same method name, but different parameters.
+- Overriding: two methods with the same method name and parameters.
+  - overriding allows to provide specific implementation for the child class which exists within the parent class.
+  - you can also override built-in magic-methods or base-functions.
 
-U3L4
-
-ITERABLE ObJECTS 
-
-iterable objects: objectsthat we can iterate through like a sequence 
+#### Polymorphism
+- a method which can be used across different classes and object which are dependant on the parameters (poly ---> many/ morphism ---> forms)
+#### Ideas:
+  - different classes (non-inherited) can have the same named methods (simple) --> Polymorphism
+  - wihtin a set of ingerited classes have the same methods
+#### Base overrides
+  - two different classes have a same attributes and methods
+  - achild of a parent gave an overrided method where the child would utilize the method differently.
+  - __repr__ --> allows to present a printable version of object 
+  - __str__ --> allows to convert to object with a string
+  
+  ---------------------------------------------------------------------------------
+  ## U3L3
+  ### Inheritance 
+  - when an object or class is based on another class; where its features are from a parent class.
+  - can branch like a tree or can be a hybrid (mixing the types of inheritances)
+    - usually not required 
+    - one wrong action can cause it to be all wrong (hard to fix)
+    - many companies and old operating systems used to use and still use decades old code.
+  #### Single Inheritance
+  - inherits the features of a single parent class
+  #### Multiple Inheritance 
+  - inherits the features of a multiple differnces aren't in classes
+  #### Mulyilevel Inheritance 
+  - inherits from another subclass
+- when a child class inherits the parent class:
+    - the child class does not need a new __init__() method UNLESS you override them
+    - child doesn't need to reinstate the parent's method UNLESS you overide them
+#### types of multiple- inheritance
+  1. Multi-Generational 
+    Grandparent --> Parent --> Child
+  2. Multi-Parent (not limited to two)
+    Parent A\
+        > Child
+    Parent B/
+  3. Mixture of both 1 and 2
+  
+-----------------------------------------------------------------------------------
+##U3L4
+### Iterable Objects 
+  - objects that we can iterate through like a sequence
+    - recall that we could iterate through Strings and Lists
+    - to access individual values without indexing, use for loops
+    - the portion of the iterable object must be a sequence
+    - iterable doesn't always mean indexable (no indexable this year)
+  
+  - __iter__() ---> allows the object to be iterable, when invoked upon
+  - __next__() ---> allows to get the next value when iterating:
+    - Common Practice:
+      - set an index attribute to -1 
+      - increment the indec attribute by 1 until self, __index is equal to length of sequence
+      - when the end is reached, raise StopIteration
+  
 
